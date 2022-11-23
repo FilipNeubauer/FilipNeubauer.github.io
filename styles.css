@@ -1,0 +1,298 @@
+#photos {
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+
+
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+
+.fa-instagram {
+    background-color: grey;
+    color: white;
+    box-sizing: content-box;
+}
+
+.fa:hover {
+    background-color: black;
+    color: white;
+}
+
+
+#contact {
+    margin-top: 10%;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 3%;
+}
+
+#contact p {
+    font-family: 'Unna', serif;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.photos {
+    width: 100%;
+    /* height: 192px; */
+    padding-bottom: 4%;
+    /* object-fit: cover; */
+}
+
+
+
+.left {
+    padding-right: 3%;
+}
+
+.mid {
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+}
+
+.right {
+    padding-left: 3%;
+}
+
+.bottom {
+    padding-bottom: 0;
+}
+
+.ig-circle {
+    border-radius: 100%;
+    background-color: grey;
+    /* width: 20px; */
+    width: 35px;
+    line-height: 35px;
+    height: 35px;
+}
+
+
+
+.footer-text {
+    margin: 0;
+    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Unna', serif;
+
+    font-size: 0.9em;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+}
+
+.con-foo {
+    padding: 80px;
+}
+
+/* header */
+
+.header {
+background-color: #fff;
+/* box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1); */
+/* position: fixed; */
+width: 100%;
+/* z-index: 3; */
+padding: 1.5%;
+padding-bottom: 0;
+}
+
+.header ul {
+/* margin: 0;
+padding: 0; */
+list-style: none;
+overflow: hidden;
+background-color: #fff;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+/* padding-top: 20px;
+padding-bottom: 20px; */
+}
+
+.clicked-ul {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+
+.header li a {
+/* display: inline; */
+/* padding: 30px; */
+/* border-right: 1px solid #f4f4f4; */
+text-decoration: none;
+color: grey;
+font-family: 'Unna', serif;
+font-size: 1em;
+}
+
+.header li a:hover{
+    color: black;
+}
+
+.header .logo {
+/* display: block; */
+/* float: left; */
+font-size: 1.7em;
+padding-left: 10px;
+/* padding: 20px 30px; */
+text-decoration: none;
+color: black;
+/* font-family: 'Playfair Display', serif; */
+/* font-family: 'Prata', serif; */
+
+/* font-family: 'Playfair Display', serif;
+font-weight: 600; */
+font-family: 'Cormorant Unicase', serif;
+/* font-family: 'Unna', serif; */
+/* font-weight: bold; */
+
+}
+
+/* menu */
+
+.header .menu {
+clear: both;
+max-height: 0;
+transition: max-height .2s ease-out;
+margin-bottom: 0;
+margin-top: 15px;
+
+/* padding: 20px; */
+}
+
+/* menu icon */
+
+.header .menu-icon {
+cursor: pointer;
+display: inline-block;
+float: right;
+padding: 20px 20px;                 /* 28 20*/
+position: relative;
+user-select: none;
+}
+
+.header .menu-icon .navicon {
+background: #333;
+display: block;
+height: 2px;
+position: relative;
+transition: background .2s ease-out;
+width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+background: #333;
+content: '';
+display: block;
+height: 100%;
+position: absolute;
+transition: all .2s ease-out;
+width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+top: 0;
+}
+
+/* 48em = 768px */
+/* @media (min-width: 600px) {
+    .photos {
+        height: 300px;
+    }
+} */
+
+@media (min-width: 768px) {
+.header li {
+    float: left;
+}
+.header li a {
+    padding: 0 30px;
+}
+.header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+    margin: 0;
+    height: 36px;
+}
+.header .menu-icon {
+    display: none;
+}
+.header ul {
+    flex-direction: row;
+}
+
+.photos {
+    padding-top: 3%;
+    /* height: 390px; */
+}
+}
+
+/* @media (min-width: 850px) {
+    .photos {
+        height: 410px;
+    }
+} 
+
+@media (min-width: 950px) {
+    .photos {
+        height: 440px;
+    }
+} 
+
+@media (min-width: 1030px) {
+    .photos {
+        height: 470px;
+    }
+} 
+
+@media (min-width: 1125px) {
+    .photos {
+        height: 567px;
+    }
+} */
+
