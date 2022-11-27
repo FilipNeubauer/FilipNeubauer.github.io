@@ -25,8 +25,15 @@ function mediaQuery(x) {
     }
   }
 
+
 var x = window.matchMedia("(min-width: 768px)");
 mediaQuery(x);
 x.addListener(mediaQuery);
+
+
+
+
+
+
 
 buttonClicked();
