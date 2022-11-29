@@ -15,7 +15,7 @@
 }
 
 .image-box {
-    width: 450px; /* on phones 450px*/
+    width: 350px; /* on phones 450px*/
     position: fixed;
     top: 0;
     top: 50%;
@@ -116,7 +116,7 @@
     font-family: 'Cormorant Garamond', serif;
     /* font-family: 'Cormorant Infant', serif; */
 
-    font-size: 0.8em;
+    font-size: 0.6em;
 }
 
 footer {
@@ -327,6 +327,10 @@ top: 0;
 
 .image-box {
     width: 550px; /* on phones 450px*/
+}
+
+.footer-text {
+    font-size: 0.8em;
 }
 }
 
