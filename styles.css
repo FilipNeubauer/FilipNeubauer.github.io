@@ -327,6 +327,7 @@ top: 0;
 
 .image-box {
     width: 550px; /* on phones 450px*/
+    visibility: hidden;
 }
 
 .footer-text {

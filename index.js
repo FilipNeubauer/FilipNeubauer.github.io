@@ -34,6 +34,8 @@ function lightBox() {
         images[i].onclick = () => {
             $(".light-box .image-box img").attr("src", images[i].src);
             $(".back").css("visibility", "visible");
+            $(".light-box .image-box").css("visibility", "visible");
+            
         }
     }
 }
@@ -41,6 +43,7 @@ function lightBox() {
 function closeL() {
     $(".back").css("visibility", "hidden");
     $(".light-box .image-box img").attr("src", "");
+    $(".light-box .image-box").css("visibility", "hidden");
 
 }
 
