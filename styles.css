@@ -22,6 +22,31 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
+    /* visibility: visible; */
+}
+
+.push-left {
+    z-index: 3;
+    height: 300px;
+    width: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    left: 0;
+    position: fixed;
+
+}
+
+
+.push-right {
+    z-index: 3;
+    height: 300px;
+    width: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+
+    right: 0;
+    position: fixed;
 }
 
 
@@ -327,12 +352,25 @@ top: 0;
 
 .image-box {
     width: 550px; /* on phones 450px*/
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 
 .footer-text {
     font-size: 0.8em;
 }
+
+
+.push-left {
+    transform: translate(300%, -50%);
+    width: 10%;
+}
+
+.push-right {
+    transform: translate(-300%, -50%);
+    width: 10%;
+
+}
+
 }
 
 /* @media (min-width: 850px) {
